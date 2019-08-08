@@ -1,18 +1,41 @@
 #include <stdio.h>
 
-int main()
+int main()                              /* Declaring Main Function */
 {
 
-	float discount;
-	int cost;
-	int count=0;
-	scanf("%d %f",&cost,&discount);
-	while(cost>0)
+	float discount;                /* Declaring Float Value to Discount for displaying Decimal Values */
+	int cost;                      /* Declaring Int to Cost for displaying Integer Values */   
+	int count=0;                   /* Declaring Count value to 0 to initate */
+	scanf("%d %f",&cost,&discount);/* Taking Inputs of Cost and Discount using scan Function */
+	while(cost>1)                  /* Creating While Loop and instering a condition of Cost to be greater than 1 */ 
 	{
-		cost=(cost-(((discount/100)*cost)));
-	
-		count++;
+		cost=(cost-(((discount/100)*cost)));  /* Logic to find the Cost after the minus of discount */
+		count += cost;                        /* Sum of all the Costs after each discount is Minus */
 	}
-	printf("%d",count);
-	return 0;
+	printf("%d\n",count);                         /* Using print funtion to display the output of the Sum of the costs */
+	return 0;                                     
 }
+
+
+/******************************************************************************
+After Executing it,
+Sample Output: and Test Cases Verified:
+
+
+                       
+100 10             // First Value & Second Value in Row 1 is the Integer X and Integer P (i.e X = Coffee Price, P = Discount Rate)
+763               // First Value in Row 2 is the Total INR amount necessary to order for free Coffee)
+                        
+0 20
+0
+
+10000 99
+101
+
+10000 10
+89675
+
+145 40
+208
+                           
+*******************************************************************************/
