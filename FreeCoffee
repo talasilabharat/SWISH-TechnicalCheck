@@ -30,7 +30,9 @@ Sample Output: and Test Cases Verified:
 0
 
 10000 99
-101
+101                                    // The following conditions are met in all test cases.
+                                          0 ≦ X ≦ 10000
+                                          1 ≦ P ≦ 100
 
 10000 10
 89675
