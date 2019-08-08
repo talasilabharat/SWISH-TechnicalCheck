@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+
+	float discount;
+	int cost;
+	int count=0;
+	scanf("%d %f",&cost,&discount);
+	while(cost>0)
+	{
+		cost=(cost-(((discount/100)*cost)));
+	
+		count++;
+	}
+	printf("%d",count);
+	return 0;
+}
