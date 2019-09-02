@@ -16,4 +16,28 @@ int main()                              /* Declaring Main Function */
 	return 0;                                     
 }
 
+/******************************************************************************
+After Executing it,
+Sample Output: and Test Cases Verified:
+
+
+                       
+100 10             // First Value & Second Value in Row 1 is the Integer X and Integer P (i.e X = Coffee Price, P = Discount Rate)
+763               // First Value in Row 2 is the Total INR amount necessary to order for free Coffee)
+                        
+0 20
+0
+
+10000 99
+101                                    // The following conditions are met in all test cases.
+                                          0 ≦ X ≦ 10000
+                                          1 ≦ P ≦ 100
+
+10000 10
+89675
+
+145 40
+208
+                           
+*******************************************************************************/
 
